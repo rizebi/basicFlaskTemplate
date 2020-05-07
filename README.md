@@ -6,6 +6,7 @@ Build the image:
 
 docker build . -t flaskimage
 
+
 Start the container with mounted volume:
 docker run -p 80:8000 flaskimage
 
@@ -16,13 +17,16 @@ Log in container, without starting the app:
 
 docker run -it -p 80:8000 --entrypoint=/bin/sh flaskimage
 
+
 Log in the running container:
 
 docker exec -it d9397bb140f6
 
+
 Test with param:
 
 curl localhost/wordsplit?search_term=texthere
+
 
 Test wirh JSON
 
