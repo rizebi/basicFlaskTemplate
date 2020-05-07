@@ -1,6 +1,8 @@
-This is a small template for an Flask application, which accepts GETs at a specific location, and call behind the hood a function.
-The deploy is on Docker, with Gunicorn as a Web Server
-This template also have IP limiter set up
+-> This is a small template for an Flask application, which accepts GETs at a specific location, and call behind the hood a function.
+
+-> The deploy is on Docker, with Gunicorn as a Web Server.
+
+-> This template also have IP limiter set up
 
 Build the image:
 
@@ -8,6 +10,7 @@ docker build . -t flaskimage
 
 
 Start the container with mounted volume:
+
 docker run -p 80:8000 flaskimage
 
 (-d = for detached)
