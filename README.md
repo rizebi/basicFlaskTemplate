@@ -4,6 +4,8 @@
 
 -> This template also have IP limiter set up
 
+#############################################################
+
 Build the image:
 
 docker build . -t flaskimage
